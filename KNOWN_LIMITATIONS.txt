@@ -1,0 +1,10 @@
+RIFTWALKER 0.9 RC — LIMITAÇÕES CONHECIDAS
+==========================================
+
+1. Esta build ainda não foi executada visualmente neste ambiente porque Pygame não está instalado aqui.
+2. O primeiro teste real de janela, input, mixer, hitbox, UI e performance será feito no notebook.
+3. As vozes atuais são síntese provisória em português. O sistema permite substituí-las posteriormente sem reescrever o gameplay.
+4. SFX, ambience e músicas atuais foram gerados proceduralmente para a RC. São funcionais e originais, mas ainda podem ser refinados no polimento.
+5. Grande parte da arte visual ainda é protótipo/procedural. A RC foca em deixar sistemas, conteúdo e pipeline completos antes da fase visual final.
+6. Balanceamento definitivo depende de partidas reais. Os limites automáticos evitam extremos conhecidos, mas não substituem sensação de jogo.
+7. A build .exe foi preparada via PyInstaller, mas o executável precisa ser gerado/testado no Windows com PyInstaller instalado.

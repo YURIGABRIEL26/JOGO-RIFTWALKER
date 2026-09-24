@@ -1,0 +1,26 @@
+RIFTWALKER — CREDITS / LICENÇAS — RC 0.9
+==========================================
+
+DESENVOLVIMENTO
+RIFTWALKER — projeto desenvolvido em Python/Pygame.
+
+ÁUDIO BASE
+- Efeitos sonoros, ambientes e músicas desta RC foram gerados proceduralmente pelo próprio projeto através de generate_audio_assets.py e generate_extra_audio.py.
+- Não foram copiados samples de terceiros para esses arquivos.
+
+VOZ PROVISÓRIA
+- As falas provisórias desta RC foram sintetizadas localmente com eSpeak e pós-processadas com FFmpeg.
+- Elas existem para permitir teste completo de voz/legendas antes de dublagem final.
+- Para um lançamento comercial definitivo, recomenda-se revisar/substituir as vozes pela direção de voz final desejada.
+
+FERRAMENTAS DE PRODUÇÃO
+- Python
+- Pygame
+- NumPy/SciPy (somente geração offline dos assets, não necessários para jogar)
+- FFmpeg (somente geração/conversão offline dos assets)
+- eSpeak (somente geração das vozes provisórias)
+- Pillow (somente geração offline do ícone)
+
+ASSETS EXTERNOS
+Nenhum asset externo de terceiros foi incorporado nesta RC além das ferramentas utilizadas para gerar conteúdo.
+Se assets externos forem adicionados depois, registrar autor, fonte e licença antes de distribuir.

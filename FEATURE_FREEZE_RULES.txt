@@ -1,0 +1,14 @@
+RIFTWALKER — REGRAS DA RETA FINAL
+=================================
+
+Até a candidata 1.0:
+1. Nova mecânica só entra se resolver lacuna essencial.
+2. Prioridade: integrar -> testar -> corrigir -> balancear -> polir.
+3. Não aumentar escopo só porque uma ideia parece legal.
+4. Bugs de save/progressão/crash têm prioridade máxima.
+5. Telegraph e justiça de combate valem mais que dificuldade artificial.
+6. Performance deve ser medida antes de adicionar efeitos caros.
+7. Áudio/arte externa só entra com licença/fonte registrada.
+8. A versão escolar mantém código Python legível/executável.
+9. A versão pública futura pode ser empacotada em EXE/ZIP sem apagar fonte.
+10. Só chamar de 1.0 FINAL depois de bateria real de Pygame.

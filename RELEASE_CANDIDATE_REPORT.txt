@@ -1,0 +1,53 @@
+RIFTWALKER — 0.9 RELEASE CANDIDATE REPORT
+=========================================
+
+STATE
+Feature freeze / ready for first real Pygame playtest.
+This is not promoted to 1.0 until the notebook test pass is complete.
+
+PROJECT METRICS
+Python files (top-level): 30
+Python lines (including tools/tests/generators): 15956
+Runtime/system Python lines: 14445
+Classes: 10
+Skills: 65
+Equipment: 28
+Regions: 6
+Quests: 12
+Bosses: 6
+Boss patterns: 20
+Creature bases: 10
+Save slots: 3
+Save schema: 8
+
+AUDIO / ASSETS
+Base SFX/music/ambience: 60
+Player voice OGG: 182 (91 lines x male/female)
+Enemy/boss voice OGG: 31
+Total OGG: 273
+Total files under assets/: 277
+FFprobe decodability: 273/273 OK
+
+FINAL OFFLINE GATES
+[OK] Python compileall
+[OK] static global-reference scan
+[OK] release audit — 0 blockers / 0 warnings
+[OK] asset integrity — 273 OGG
+[OK] self_test
+[OK] stress_test
+[OK] 300 procedural maps
+[OK] 300 generated encounter plans
+[OK] 10 class kits
+[OK] 6 boss decks/phases
+[OK] save v8 + 3 slots/checksum
+[OK] PyInstaller spec/assets path prepared
+
+NOT POSSIBLE IN THIS ENVIRONMENT
+[ ] Real Pygame window/input test (pygame package unavailable here)
+[ ] Real mixer/output-device listening test
+[ ] Windows PyInstaller execution test (PyInstaller unavailable here)
+[ ] Human gameplay balance/feel test
+
+NEXT GATE
+Run install_and_run.bat on the repaired notebook and follow
+FIRST_REAL_TEST_CHECKLIST.txt. Fix every blocker before calling the project 1.0.

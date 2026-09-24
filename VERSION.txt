@@ -1,0 +1,2 @@
+RIFTWALKER 0.9.7
+Male Mage Visibility Hotfix

@@ -1,0 +1,176 @@
+RIFTWALKER — PRIMEIRA BATERIA REAL DE TESTES
+============================================
+
+Executar quando o notebook voltar.
+
+PREPARACAO
+[ ] Extrair ZIP em pasta nova.
+[ ] Confirmar Python: python --version
+[ ] Rodar install_and_run.bat OU instalar requirements.txt.
+[ ] Rodar self_test.py.
+[ ] Rodar stress_test.py.
+[ ] Se ambos passarem, abrir main.py.
+
+BOOT / MENU
+[ ] Jogo abre sem terminal de erro.
+[ ] Título e Release Candidate 0.9 aparecem corretamente.
+[ ] 3 slots aparecem.
+[ ] Slot vazio funciona.
+[ ] Novo jogo funciona nos slots 1, 2 e 3.
+[ ] Continuar carrega o slot certo.
+[ ] Nome do personagem cabe na UI.
+[ ] Homem/mulher funcionam.
+[ ] Guerreiro/Mago/Arqueiro iniciais selecionáveis.
+
+CONTROLES / FPS
+[ ] WASD em todas as direções.
+[ ] Movimento diagonal não é mais rápido.
+[ ] Mouse/mira.
+[ ] LMB/RMB.
+[ ] 1–4 habilidades.
+[ ] SPACE dash.
+[ ] Q/parry onde aplicável.
+[ ] ESC pausa.
+[ ] Inventário/menu.
+[ ] F3/debug.
+[ ] Testar 30/60/120+ FPS se possível; velocidade deve permanecer consistente.
+
+CLASSES
+[ ] Guerreiro: ataque/fadiga/parry/10º golpe/skills.
+[ ] Mago: mana/magias/elementos/skills.
+[ ] Arqueiro: energia/projéteis/perfuração/skills.
+[ ] Ceifador: execução/roubo de vida/skills.
+[ ] Rasgado: corrupção/risco/skills.
+[ ] Cronista: temporal/controle/skills.
+[ ] Artífice: dispositivos/skills.
+[ ] Duelista: mobilidade/parry/combo/skills.
+[ ] Oráculo: marcas/maldições/skills.
+[ ] Guardião do Véu: barreiras/defesa/skills.
+
+COMBATE
+[ ] Ataques acertam onde visualmente deveriam.
+[ ] Sem hits atravessando paredes/limites indevidamente.
+[ ] Projéteis não ficam eternos.
+[ ] Dano e números aparecem.
+[ ] Status aplicam/removem.
+[ ] Reações elementais funcionam.
+[ ] Cura respeita vida máxima.
+[ ] Cooldowns não ficam negativos/travados.
+[ ] Dash não atravessa limites inválidos.
+[ ] Parry tem janela justa.
+[ ] Hit-stop não congela jogo permanentemente.
+[ ] Screen shake não desloca HUD de forma ruim.
+
+IA / ENCONTROS
+[ ] Crawler.
+[ ] Shooter.
+[ ] Hunter.
+[ ] Tank.
+[ ] Support.
+[ ] Squads Cerco/Fortaleza/Caçada/Isca parecem diferentes.
+[ ] Superior nasce e mostra identidade/mutação.
+[ ] Encounter Director não gera sala impossível.
+[ ] Recovery aparece quando esperado.
+
+BOSSES
+[ ] Guardião.
+[ ] Matriarca.
+[ ] Primeiro Rasgado.
+[ ] Cronarca.
+[ ] O Nome Apagado.
+[ ] Eco do Riftwalker no pós-jogo.
+[ ] Fases trocam no HP correto.
+[ ] Telegraph dá tempo de reação.
+[ ] Não repete um único ataque infinitamente.
+[ ] Memória muda repertório sem parecer leitura de input.
+
+PROGRESSAO
+[ ] XP/level.
+[ ] Ofertas de habilidade.
+[ ] Raridade.
+[ ] Maestria.
+[ ] Evolução de skill.
+[ ] Sinergias.
+[ ] Equipamentos.
+[ ] Sets.
+[ ] Loot comum/elite/Superior/boss.
+[ ] Classes desbloqueáveis persistem.
+[ ] Bestiário evolui.
+[ ] Pesquisa recebe pontos.
+[ ] Conquistas/Provações atualizam.
+[ ] Ecos/Legado persistem.
+
+RUPTURAS / CAMPANHA
+[ ] 5 tipos de Ruptura.
+[ ] Modificadores realmente afetam gameplay.
+[ ] Missões avançam com eventos certos.
+[ ] Boss derrotado avança campanha.
+[ ] Regiões desbloqueiam.
+[ ] Boss final libera finais.
+[ ] Final escolhido persiste.
+[ ] NG+ inicia corretamente.
+[ ] Boss secreto fica disponível nas condições corretas.
+
+SAVE
+[ ] Autosave mostra/funciona sem travada perceptível.
+[ ] Fechar e abrir mantém progresso.
+[ ] Cada slot é independente.
+[ ] Save corrompido manualmente tenta backup.
+[ ] Deletar/restaurar slot funciona no backend/menu quando exposto.
+
+PERFORMANCE
+[ ] 10 minutos de combate sem crescimento anormal de RAM percebido.
+[ ] Muitas partículas sem queda brutal.
+[ ] Sala cheia sem stutter excessivo.
+[ ] Boss + projéteis + status simultâneos.
+[ ] Alt-tab / voltar ao jogo.
+[ ] Pausar/despausar repetidamente.
+
+REGISTRO DE BUG
+Para cada bug, anotar:
+- build;
+- classe;
+- região/wave;
+- o que estava fazendo;
+- como reproduzir;
+- mensagem completa do terminal;
+- screenshot se for visual.
+
+UI / REFÚGIO / META MENUS
+[ ] C abre/fecha Códice e Bestiário.
+[ ] J abre/fecha Missões e progresso correto.
+[ ] H abre/fecha Refúgio e mostra recursos/instalações.
+[ ] 1–5 no Refúgio melhoram a instalação correta quando há recursos.
+[ ] O abre/fecha Configurações.
+[ ] Settings salvam e continuam após reiniciar.
+[ ] Redução de screen shake funciona.
+[ ] Redução de flashes funciona.
+[ ] Números de dano ON/OFF funciona.
+[ ] Legendas ON/OFF funciona.
+[ ] Dificuldade altera inimigos/recompensas sem quebrar save.
+
+ÁUDIO
+[ ] Música de menu toca e faz loop sem estalo evidente.
+[ ] Ambience muda com região.
+[ ] Combate normal troca música corretamente.
+[ ] Superior Hunt entra/sai sem travar música.
+[ ] Música de boss entra no boss correto.
+[ ] Boss final usa trilha própria.
+[ ] Música de final toca quando esperado.
+[ ] Espada: swing e hit são distinguíveis.
+[ ] Arco: tiro e impacto são distinguíveis.
+[ ] Magia: cast e impacto/elemento são distinguíveis.
+[ ] Parry tem feedback forte e não estoura volume.
+[ ] Dash é audível sem ficar irritante em repetição.
+[ ] Dano/morte/cura funcionam.
+[ ] Ruptura open/accept funciona.
+[ ] Spawn de Superior funciona.
+[ ] Drop raro/lendário funciona.
+[ ] Mudança de fase/morte de boss funciona.
+[ ] Voz masculina toca falas corretas.
+[ ] Voz feminina toca falas corretas.
+[ ] Encantamento da Bola de Fogo diminui conforme maestria.
+[ ] Bosses/inimigos falam nos eventos corretos.
+[ ] Legendas acompanham falas quando ativadas.
+[ ] Volumes Música/SFX/Voz não se atropelam.
+[ ] Alt-tab/foco não deixa áudio duplicado ou preso.

@@ -1,0 +1,18 @@
+RIFTWALKER — CREDITS / LICENCAS DE ASSETS
+=========================================
+
+REGRA: todo asset externo adicionado ao projeto deve ser registrado aqui
+ANTES de uma build publica.
+
+Modelo:
+[CATEGORIA] Nome do asset
+Autor: 
+Fonte: 
+Licenca: 
+Atribuicao obrigatoria: 
+Arquivo(s) usado(s): 
+
+------------------------------------------------------------
+
+Ainda nao ha assets externos definitivos registrados nesta build.
+Nao apagar este arquivo: ele sera a fonte dos creditos/licencas da versao publica.

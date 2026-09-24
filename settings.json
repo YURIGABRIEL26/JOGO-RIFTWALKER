@@ -1,0 +1,55 @@
+{
+    "difficulty": "viajante",
+    "language": "pt-BR",
+    "accessibility": {
+        "subtitles": true,
+        "subtitle_size": 100,
+        "subtitle_background": true,
+        "reduced_screen_shake": false,
+        "reduced_flashes": false,
+        "high_contrast_telegraphs": false,
+        "colorblind_mode": "off",
+        "damage_numbers": true,
+        "aim_assist_strength": 0,
+        "hold_to_cast": false,
+        "auto_sprint": false,
+        "larger_ui": false
+    },
+    "audio": {
+        "master": 90,
+        "music": 10,
+        "sfx": 85,
+        "voices": 90,
+        "ambience": 75,
+        "mute_when_unfocused": true
+    },
+    "video": {
+        "resolution": [
+            1280,
+            720
+        ],
+        "fullscreen": false,
+        "vsync": false,
+        "fps_cap": 144,
+        "show_fps": false
+    },
+    "bindings": {
+        "move_up": "W",
+        "move_down": "S",
+        "move_left": "A",
+        "move_right": "D",
+        "basic_attack": "MOUSE1",
+        "secondary": "MOUSE2",
+        "skill_1": "1",
+        "skill_2": "2",
+        "skill_3": "3",
+        "skill_4": "4",
+        "defense": "Q",
+        "dash": "SPACE",
+        "interact": "E",
+        "inventory": "I",
+        "map": "M",
+        "codex": "C",
+        "pause": "ESC"
+    }
+}

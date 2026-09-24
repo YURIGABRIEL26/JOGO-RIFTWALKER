@@ -1,0 +1,20 @@
+RIFTWALKER 0.9.8 - AUDITORIA E CORRECOES
+
+Correcoes principais:
+- save/backup: recuperacao nao destrói mais o backup valido
+- verificacao de slot detecta JSON principal corrompido
+- Diretor de Encontros usa mortes recentes, com decaimento por sala
+- banners agora entram em fila e nao sobrescrevem avisos de boss/missao
+- canais reservados de voz/ambiente corrigidos no pygame.mixer
+- mouse nao atravessa inventario/painel para atacar
+- inventario nao abre painéis meta por baixo
+- mira/nevoa alinhadas ao screen shake
+- loadout ativo preserva ordem de Q/E/R/F ao aprender novas skills
+- failsafe visual evita skins quase totalmente transparentes
+- materializacao do arquivo unico revalida runtime extraido
+
+Verificacao automatizada:
+- compileall: OK
+- self_test: OK (pygame visual pulado neste ambiente)
+- stress_test: OK
+- regressao save/profile/recent_deaths: OK

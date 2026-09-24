@@ -1,0 +1,96 @@
+0.9.8 - Auditoria e correcoes
+RIFTWALKER 0.9.8 - AUDITORIA E CORRECOES
+
+Correcoes principais:
+- save/backup: recuperacao nao destrói mais o backup valido
+- verificacao de slot detecta JSON principal corrompido
+- Diretor de Encontros usa mortes recentes, com decaimento por sala
+- banners agora entram em fila e nao sobrescrevem avisos de boss/missao
+- canais reservados de voz/ambiente corrigidos no pygame.mixer
+- mouse nao atravessa inventario/painel para atacar
+- inventario nao abre painéis meta por baixo
+- mira/nevoa alinhadas ao screen shake
+- loadout ativo preserva ordem de Q/E/R/F ao aprender novas skills
+- failsafe visual evita skins quase totalmente transparentes
+- materializacao do arquivo unico revalida runtime extraido
+
+Verificacao automatizada:
+- compileall: OK
+- self_test: OK (pygame visual pulado neste ambiente)
+- stress_test: OK
+- regressao save/profile/recent_deaths: OK
+
+--- HISTORICO ANTERIOR ---
+RIFTWALKER 0.9.5 — REFINEMENT & DIAGNOSTICS PATCH
+
+- remove leitura de manifests de voz a cada frame;
+- reserva canais dedicados para voz e ambiente;
+- cache quantizado de transformações de sprites;
+- limites de segurança para partículas, projéteis e VFX;
+- overlay F3 expandido com frame time, entidades, região, cache e drops de VFX;
+- relatório automático de crash em logs/;
+- diagnóstico de recuperação de save principal/backup;
+- fade curto entre salas;
+- novos testes automáticos de diagnóstico e recuperação;
+- sem conteúdo novo: feature freeze mantido.
+
+RIFTWALKER 0.9.4 — Attack VFX Patch
+- Remove fallback visual de projétil em bolinha genérica.
+- Adiciona VFX procedurais por elemento, classe e origem.
+- Melhora telegraphs e áreas de efeito.
+
+RIFTWALKER — CHANGELOG RESUMIDO
+===============================
+
+0.2 — Core Systems
+Classes, skills, raridade, maestria, Memória, squads, Rupturas, save e fixed timestep.
+
+0.3 — Equipment & Progression
+Equipamentos, sets, loot e desbloqueio real de classes.
+
+0.4 — Narrative Layer
+Regiões, NPCs, missões, contratos, eventos e campanha persistente.
+
+0.5 — Last Light Refuge
+Economia, materiais, consumíveis, crafting, instalações, vendedores e preparação de expedição.
+
+0.6 — Creature Knowledge
+Superiores, mutações, Bestiário, pesquisa e memória de inimigos superiores.
+
+0.7 — Mega Systems Update
+Status/reação, sinergias/evoluções, mapa procedural, boss decks,
+Encounter Director, facções, conquistas/Provações e Legado de Ecos.
+
+0.8 — Closing the Game
+65 skills e kits das 10 classes; campanha fechada até boss final;
+O Nome Apagado + Eco do Riftwalker; 5 finais; NG+; tutorial/códice;
+dificuldades/acessibilidade; 3 slots; integração real de sinergias/status/
+Encounter Director/boss progression; auditoria e stress tests.
+
+0.9 RC — Audio & Product Completion
+Feature freeze e fechamento para teste real. Integração de áudio no runtime;
+60 SFX/músicas/ambiences procedurais; 182 vozes provisórias do jogador;
+31 vozes de bosses/inimigos; música dinâmica e legendas; menus de Refúgio,
+Códice, Missões e Configurações ligados ao runtime; dificuldade e acessibilidade
+passam a afetar a partida; caminhos de assets compatíveis com PyInstaller;
+ícone/branding funcional; scripts de instalação/teste/build .exe; auditoria de
+release, integridade de assets e validação FFprobe. Estado: candidata a 1.0,
+aguardando teste real no notebook e correções/polimento encontrados nele.
+
+0.9.2 — Monster Skin & Animation Patch
+- 10 novos assets visuais de inimigos/bosses em PNG transparente.
+- Crawler, Shooter, Tank e Hunter agora têm silhuetas próprias.
+- 6 bosses usam aparências específicas por boss_id.
+- Animação procedural de idle, andar, corrida/perseguição, ataque, dano e morte.
+- Hunter recebe afterimage em corrida; Tank tem passada pesada; Crawler rasteja com cadência rápida.
+- Elite/Superior exibe aura e mutações orbitais sem alterar hitbox.
+- 7 novos SFX: passos de crawler/leves/pesados, ataques melee/ranged, dano e rugido.
+- Hitbox e lógica de combate permanecem separadas da arte.
+
+0.9.3 — World & Scenario Patch
+- Substitui a arena retangular/grade antiga por renderer de ambiente por região.
+- 6 temas visuais canônicos: Refúgio, Campos, Bosque, Bastilha, Observatório e Abismo.
+- Chãos procedurais, bordas irregulares, props, rachaduras, vegetação e runas.
+- Partículas/névoa ambientais e cicatrizes visuais conforme Rupturas ativas.
+- Arenas de boss recebem sigilos e composição visual própria.
+- Cenário permanece separado de hitbox/combate para segurança antes do teste real.

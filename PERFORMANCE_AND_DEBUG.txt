@@ -1,0 +1,16 @@
+RIFTWALKER 0.9.5 — PERFORMANCE / DEBUG
+
+F3 ativa o painel de diagnóstico em tempo real.
+Ele mostra FPS, frame time médio/pior, updates lógicos, entidades, região, wave, Rupturas, cache de sprites e VFX descartados pelos limites de segurança.
+
+Em caso de crash inesperado, o jogo tenta salvar um checkpoint e cria um relatório em DATA_DIR/logs/crash_*.txt.
+
+Guardrails atuais:
+- partículas: 520
+- textos flutuantes: 140
+- slashes: 140
+- projéteis: 420
+- efeitos de área: 120
+- visuais de morte: 80
+
+Esses limites não mudam dano/hitbox; apenas impedem crescimento visual ilimitado em combinações extremas.
